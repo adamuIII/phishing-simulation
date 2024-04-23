@@ -25,6 +25,8 @@ pip install -r requirements.txt
 ## Usage
 
 Modify .env with your email and email code: https://support.google.com/accounts/answer/1187538?hl=en&co=GENIE.Platform%3DDesktop
+run python tkinterApp.py - send emails
+run python app.py - run simulation, check stats
 
 ## TODO
 
