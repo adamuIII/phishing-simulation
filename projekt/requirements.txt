@@ -1,5 +1,0 @@
-Flask
-dotenv
-smtplib
-email-to
-tkinter
