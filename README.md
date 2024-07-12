@@ -31,6 +31,8 @@ pip install -r requirements.txt
 - Set API keys for all the features you want to use: [Explanation](#how-to-set-up-api-keys-and-tokens)
 - run flask app `flask --app app run` - run simulation, check stats
 
+![Przykładowy obrazek](usage photos/settings.png)
+
 ## How to set up API Keys and Tokens
 ### &nbsp; &nbsp; Sending emails
 - Create a gmail account
