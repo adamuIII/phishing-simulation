@@ -1,0 +1,10 @@
+Flask
+dotenv
+smtplib
+email-to
+tkinter
+flet
+python-dotenv
+qrcode
+openai
+twilio

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="home">Home</a></li>
+            <li><a href="phishing">Phishing</a></li>
+            <li><a href="aboutme">About me</a></li>
+            <li><a href="statistics">Statistics</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Statistics</h1>
+        <p>The app compares how many people surveyed clicked on a suspicious link</p>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['All participants', 'Participants who clicked on the link'],
+                    datasets: [{
+                        data: [{{ participants_count }}, {{ winners_count }}],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(tooltipItem) {
+                                    var value = tooltipItem.raw;
+                                    var label = tooltipItem.label;
+                                    var total = myChart.data.datasets[0].data.reduce((a, b) => a + b, 0);
+                                    var percentage = ((value / total) * 100).toFixed(2);
+                                    return `${label}: ${value} (${percentage}%)`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
