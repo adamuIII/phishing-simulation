@@ -34,7 +34,7 @@ pip install -r requirements.txt
 1. Set keys in settings
 ![Alt text](https://github.com/adamuIII/phishing-simulation/blob/main/usage%20photos/settings.png "settings")
 
-2. Save emails
+2. Save emails\
 ![Alt text](https://github.com/adamuIII/phishing-simulation/blob/main/usage%20photos/saveEmails.png "saveEmails")
 
 3. Generate text with OpenAI
