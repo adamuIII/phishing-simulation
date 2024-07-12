@@ -31,7 +31,30 @@ pip install -r requirements.txt
 - Set API keys for all the features you want to use: [Explanation](#how-to-set-up-api-keys-and-tokens)
 - run flask app `flask --app app run` - run simulation, check stats
 
-![Alt text](https://github.com/adamuIII/phishing-simulation/blob/main/usage%20photos/settings.png "Title")
+1. Set keys in settings
+![Alt text](https://github.com/adamuIII/phishing-simulation/blob/main/usage%20photos/settings.png "settings")
+
+2. Save emails
+![Alt text](https://github.com/adamuIII/phishing-simulation/blob/main/usage%20photos/saveEmails.png "saveEmails")
+
+3. Generate text with OpenAI
+![Alt text](https://github.com/adamuIII/phishing-simulation/blob/main/usage%20photos/ganeratedText.png "ganeratedText")
+
+4. Phishing attack
+![Alt text](https://github.com/adamuIII/phishing-simulation/blob/main/usage%20photos/email.png "email")
+
+5. Send smishing
+![Alt text](https://github.com/adamuIII/phishing-simulation/blob/main/usage%20photos/smishing.png "smishing")
+
+6. Smishing attack
+![Alt text](https://github.com/adamuIII/phishing-simulation/blob/main/usage%20photos/smishing2.png "smishing2")
+
+7. After clicking on link
+![Alt text](https://github.com/adamuIII/phishing-simulation/blob/main/usage%20photos/clickingLink.png "clickingLink")
+
+8. Statistics of simulation
+![Alt text](https://github.com/adamuIII/phishing-simulation/blob/main/usage%20photos/statisticksOfAttack.png "statisticksOfAttack")
+
 
 ## How to set up API Keys and Tokens
 ### &nbsp; &nbsp; Sending emails
