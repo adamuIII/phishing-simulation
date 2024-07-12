@@ -46,7 +46,7 @@ pip install -r requirements.txt
 5. Send smishing
 ![Alt text](https://github.com/adamuIII/phishing-simulation/blob/main/usage%20photos/smishing.png "smishing")
 
-6. Smishing attack
+6. Smishing attack\
 ![Alt text](https://github.com/adamuIII/phishing-simulation/blob/main/usage%20photos/smishing2.png "smishing2")
 
 7. After clicking on link
